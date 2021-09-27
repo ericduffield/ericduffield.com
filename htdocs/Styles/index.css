@@ -1,0 +1,212 @@
+/* ===========  Color Variables  ========== */
+
+:root {
+    --black: #2a2a2a;
+    --hover: #54595F;
+    --white: white;
+    --grey: #D2D2D2;
+    --white: #F5F5F5;
+    --darkGrey: #919190;
+}
+
+main{
+    margin: 0rem 0rem 0rem 0rem;
+}
+
+#heroSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 17rem;
+    overflow: hidden;
+    background: linear-gradient(rgba(230, 214, 180, 0.15), rgba(230, 214, 180, 0.15));
+}
+
+#heroImage{
+    min-width: 65rem;
+    z-index: -1;
+}
+
+#heroSection h1{
+    position: absolute;
+    color: white;
+    font-size: 3rem;
+}
+
+#storeSection{
+    margin: 2rem 2rem 0rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#storeSection img{
+    width: 30%
+}
+
+.video{
+    width: 100%;
+    height: auto;
+}
+
+#wallpaperSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wallpaperSection img{
+    width: 50%
+}
+
+#photosSection img{
+    width: 50%
+}
+
+.button{
+    margin-top: 2rem;
+    background-color: var(--black);
+    color: var(--white);
+    font-weight: 400; 
+    align-items: center;
+    font-size: 1rem;
+    padding: 0.6rem;
+    border: 0.1rem solid var(--black);
+    border-radius: 2px;
+}
+
+.button:hover{
+    background-color: var(--hover);
+    border: 0.1rem solid var(--hover);
+    transition: 0.4s ease-in-out;
+}
+
+#grid {
+    display: grid;
+    text-transform: uppercase;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+    align-items: start;
+  }
+  
+  #grid a {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .name{
+    width: 100%;
+    color: var(--black);
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-align: left;
+    margin-top: 0.8rem;
+  }
+  
+  .color{
+    width: 100%;
+    color: var(--darkGrey);
+    font-weight: 600;
+    text-align: left;
+    margin-top: 0.2rem;
+  }
+  
+  .price{
+    width: 100%;
+    color: var(--black);
+    text-align: left;
+    margin-top: 0.2rem;
+  }
+  
+  a div img {
+    width: 100%;
+    opacity: 0;
+  }
+  
+  #obsidians{
+    background: url("../Products/Obsidians/2.JPG") no-repeat;
+    background-size: contain;
+  }
+  
+  #obsidians img{
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    transition: opacity 0.75s ease-in-out;
+  }
+  
+  #obsidians img:hover{
+    opacity: 0;
+  }
+
+  #kithHoodie{
+    background: url("../Products/Kith Hoodie/2.JPG") no-repeat;
+    background-size: contain;
+  }
+  
+  #kithHoodie img{
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    transition: opacity 0.75s ease-in-out;
+  }
+  
+  #kithHoodie img:hover{
+    opacity: 0;
+  }
+
+  #stoneIslandCrewneck{
+    background: url("../Products/Stone Island Crewneck/2.JPG") no-repeat;
+    background-size: contain;
+  }
+  
+  #stoneIslandCrewneck img{
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    transition: opacity 0.75s ease-in-out;
+  }
+  
+  #stoneIslandCrewneck img:hover{
+    opacity: 0;
+  }
+  
+@media only screen and (max-width: 760px)
+{
+  #heroSection{
+    /*height: 10rem;*/
+    margin: auto;
+  }
+
+  #heroSection h1{
+    font-size: 2.5rem;
+  }
+
+  #videoSection{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+
+  #videoSection video{
+    width: 177.77777778vh; /* 100 * 16 / 9 */
+    min-width: 65rem;
+    min-height: 56.25vw; /* 100 * 9 / 16 */
+  }
+}
+
+@media (min-width:640px) and (max-width:760px){
+  #grid{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }  
+}
+
+@media (max-width:640px){
+  #grid{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
