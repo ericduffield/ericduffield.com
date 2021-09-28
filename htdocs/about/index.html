@@ -2,14 +2,14 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<title>Store</title>
-		<link href="../../Styles/baseline.css" rel="stylesheet" />
-		<link href="../../Styles/product.css" rel="stylesheet" />
-		<script type="text/javascript" src="../../Scripts/product.js"></script>
-		<script
-			type="text/javascript"
-			src="../../Scripts/menuSlide.js"
-		></script>
+		<title>About</title>
+		<meta
+			name="description"
+			content="I am a content creator from Montreal, Québec. I make content that mostly revolves around fashion and streetwear. My goal is to inspire people to improve themselves whether that is to do with style, photography, fitness, financial success, social media presence, or any other goal that you have."
+		/>
+		<link href="/Styles/baseline.css" rel="stylesheet" />
+		<link href="/Styles/about.css" rel="stylesheet" />
+		<script type="text/javascript" src="/Scripts/menuSlide.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 	</head>
 
@@ -23,26 +23,23 @@
 			<div id="menuToggle">
 				<input onclick="slide(); hamburger()" />
 			</div>
-			<nav>
+			<nav role="navigation">
 				<ul id="navbar">
-					<a href="https://ericduffield.com/">
+					<a href="/">
 						<li>Home</li>
 					</a>
-					<a href="../../about.html">
+					<a class="active" href="/about">
 						<li>About</li>
 					</a>
-					<a class="active" href="../../store.html">
+					<a href="/store">
 						<li>Store</li>
 					</a>
-					<a href="../../photos.html">
-						<li>Photos</li>
-					</a>
-					<a href="../../socials.html">
+					<a href="/socials">
 						<li>Socials</li>
 					</a>
 				</ul>
 			</nav>
-			<a href="https://ericduffield.com/">
+			<a href="/">
 				<p id="name">Eric Duffield</p>
 			</a>
 			<div id="socials">
@@ -106,7 +103,7 @@
 				</ul>
 			</div>
 			<div id="cart">
-				<a href="../../cart.html">
+				<a href="/cart">
 					<svg
 						aria-hidden="true"
 						focusable="false"
@@ -123,154 +120,37 @@
 		</header>
 
 		<ul id="menu">
-			<a href="https://ericduffield.com/">
+			<a href="/">
 				<li>Home</li>
 			</a>
-			<a href="../../about.html">
+			<a href="/about">
 				<li>About</li>
 			</a>
-			<a href="../../store.html">
+			<a href="/store">
 				<li>Store</li>
 			</a>
-			<a href="../../photos.html">
-				<li>Photos</li>
-			</a>
-			<a href="../../socials.html">
+			<a href="/socials">
 				<li>Socials</li>
 			</a>
 		</ul>
 
 		<main>
-			<section id="content">
-				<div id="hiddenTitle">
-					<h1>Jordan 1 High OG “Obsidian” - 13</h1>
-				</div>
-				<div id="images">
-					<div id="mainPicture">
-						<img id="expandedImg" src="./1.JPG" />
-					</div>
-					<div id="thumbnails">
-						<div class="column">
-							<img
-								src="./1.JPG"
-								alt="1"
-								onclick="myFunction(this);"
-							/>
-						</div>
-						<div class="column">
-							<img
-								src="./2.JPG"
-								alt="2"
-								onclick="myFunction(this);"
-							/>
-						</div>
-						<div class="column">
-							<img
-								src="./3.JPG"
-								alt="3"
-								onclick="myFunction(this);"
-							/>
-						</div>
-						<div class="column">
-							<img
-								src="./4.JPG"
-								alt="4"
-								onclick="myFunction(this);"
-							/>
-						</div>
-						<div class="column last">
-							<img
-								src="./5.JPG"
-								alt="5"
-								onclick="myFunction(this);"
-							/>
-						</div>
-					</div>
-				</div>
-				<div id="description">
-					<h1>Jordan 1 High OG “Obsidian” - 13</h1>
-					<h2>$500 CAD</h2>
-					<p>Size: 13</p>
-					<p>Colorway: Sail/Obsidian/University Blue</p>
-					<p>Condition: 8/10</p>
+			<section id="mainSection">
+				<section id="section1">
+					<h1>About me</h1>
 					<p>
-						Factory flaw: have three dark blue laces and 1 light
-						blue.
+						I am a content creator from Montreal, Québec. I make
+						content that mostly revolves around fashion and
+						streetwear. My goal is to inspire people to improve
+						themselves whether that is to do with style,
+						photography, fitness, financial success, social media,
+						or any other goal that you have.
 					</p>
-
-					<div id="paypalButton">
-						<div id="smart-button-container">
-							<div style="text-align: center">
-								<div id="paypal-button-container"></div>
-							</div>
-						</div>
-						<script
-							src="https://www.paypal.com/sdk/js?client-id=AYNd029yWQYpw5QpHOI7Eu5TPb4MUuCKrNsAFEF3G0eYECqRGhgmW706-j3MKRdlJvSYVOTu_kVG2DVp&currency=CAD"
-							data-sdk-integration-source="button-factory"
-						></script>
-						<script>
-							function initPayPalButton() {
-								paypal
-									.Buttons({
-										style: {
-											shape: 'rect',
-											color: 'gold',
-											layout: 'vertical',
-											label: 'paypal',
-										},
-
-										createOrder: function (data, actions) {
-											return actions.order.create({
-												purchase_units: [
-													{
-														description:
-															'Jordan 1 High OG “Obsidian” \nSize: 13\nColorway: Sail/Obsidian/University Blue\nCondition: 8/10',
-														amount: {
-															currency_code:
-																'CAD',
-															value: 500,
-														},
-													},
-												],
-											});
-										},
-
-										onApprove: function (data, actions) {
-											return actions.order
-												.capture()
-												.then(function (details) {
-													alert(
-														'Transaction completed by ' +
-															details.payer.name
-																.given_name +
-															'!'
-													);
-												});
-										},
-
-										onError: function (err) {
-											console.log(err);
-										},
-									})
-									.render('#paypal-button-container');
-							}
-							initPayPalButton();
-						</script>
-					</div>
-				</div>
+				</section>
+				<section id="section2">
+					<img id="me" src="/Pictures/About/Me.JPG" alt="City View" />
+				</section>
 			</section>
-			<section id="back">
-				<a class="button" href="../../store.html"
-					>&#x3c; BACK TO STORE</a
-				>
-			</section>
-			<p id="question">
-				Question about an item? <br id="line" />
-				Send me a message on
-				<a href="https://www.instagram.com/eric_duffield/">instagram</a
-				>.
-			</p>
-			<p id="refunds">All Sales Final/No Returns or Refunds</p>
 		</main>
 
 		<footer>

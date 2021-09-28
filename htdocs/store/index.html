@@ -3,9 +3,9 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>Store</title>
-		<link href="./Styles/baseline.css" rel="stylesheet" />
-		<link href="./Styles/store.css" rel="stylesheet" />
-		<script type="text/javascript" src="./Scripts/menuSlide.js"></script>
+		<link href="/Styles/baseline.css" rel="stylesheet" />
+		<link href="/Styles/store.css" rel="stylesheet" />
+		<script type="text/javascript" src="/Scripts/menuSlide.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 	</head>
 
@@ -19,26 +19,23 @@
 			<div id="menuToggle">
 				<input onclick="slide(); hamburger()" />
 			</div>
-			<nav>
+			<nav role="navigation">
 				<ul id="navbar">
-					<a href="https://ericduffield.com/">
+					<a href="/">
 						<li>Home</li>
 					</a>
-					<a href="./about.html">
+					<a href="/about">
 						<li>About</li>
 					</a>
-					<a class="active" href="./store.html">
+					<a class="active" href="/store">
 						<li>Store</li>
 					</a>
-					<a href="./photos.html">
-						<li>Photos</li>
-					</a>
-					<a href="./socials.html">
+					<a href="/socials">
 						<li>Socials</li>
 					</a>
 				</ul>
 			</nav>
-			<a href="https://ericduffield.com/">
+			<a href="/">
 				<p id="name">Eric Duffield</p>
 			</a>
 			<div id="socials">
@@ -102,7 +99,7 @@
 				</ul>
 			</div>
 			<div id="cart">
-				<a href="./cart.html">
+				<a href="/cart">
 					<svg
 						aria-hidden="true"
 						focusable="false"
@@ -119,58 +116,38 @@
 		</header>
 
 		<ul id="menu">
-			<a href="https://ericduffield.com/">
+			<a href="/">
 				<li>Home</li>
 			</a>
-			<a class="active" href="./about.html">
+			<a href="/about">
 				<li>About</li>
 			</a>
-			<a href="./store.html">
+			<a href="/store">
 				<li>Store</li>
 			</a>
-			<a href="./photos.html">
-				<li>Photos</li>
-			</a>
-			<a href="./socials.html">
+			<a href="/socials">
 				<li>Socials</li>
 			</a>
 		</ul>
 
 		<main>
-			<ul id="menu">
-				<a href="https://ericduffield.com/">
-					<li>Home</li>
-				</a>
-				<a class="active" href="./about.html">
-					<li>About</li>
-				</a>
-				<a href="./store.html">
-					<li>Store</li>
-				</a>
-				<a href="./photos.html">
-					<li>Photos</li>
-				</a>
-				<a href="./socials.html">
-					<li>Socials</li>
-				</a>
-			</ul>
 			<section id="grid">
-				<!--<a href="./Products/Presets/presets.html">
-                <img src="./Products/" alt="Presets">
+				<!--<a href="/Products/Presets/presets.html">
+                <img src="/Products/" alt="Presets">
                 <p></p>
             </a>-->
-				<a href="./Products/Obsidians/obsidians.html">
+				<a href="/Products/Obsidians">
 					<div id="obsidians">
-						<img src="./Products/Obsidians/1.JPG" alt="Obsidians" />
+						<img src="/Products/Obsidians/1.JPG" alt="Obsidians" />
 					</div>
 					<p class="name">Jordan 1 High OG “Obsidian” - 13</p>
 					<p class="color">Obsidian</p>
 					<p class="price">$500 CAD</p>
 				</a>
-				<a href="./Products/Kith Hoodie/kithHoodie.html">
+				<a href="/Products/Kith Hoodie">
 					<div id="kithHoodie">
 						<img
-							src="./Products/Kith Hoodie/1.JPG"
+							src="/Products/Kith Hoodie/1.JPG"
 							alt="Kith Hoodie"
 						/>
 					</div>
@@ -178,12 +155,10 @@
 					<p class="color">Heather Gray</p>
 					<p class="price">$280 CAD</p>
 				</a>
-				<a
-					href="./Products/Stone Island Crewneck/stoneIslandCrewneck.html"
-				>
+				<a href="/Products/Stone Island Crewneck">
 					<div id="stoneIslandCrewneck">
 						<img
-							src="./Products/Stone Island Crewneck/1.JPG"
+							src="/Products/Stone Island Crewneck/1.JPG"
 							alt="Stone Island Crewneck"
 						/>
 					</div>
@@ -191,12 +166,10 @@
 					<p class="color">Dark Gray</p>
 					<p class="price">$320 CAD</p>
 				</a>
-				<a
-					href="./Products/Stone Island Longsleeve/stoneIslandLongsleeve.html"
-				>
+				<a href="/Products/Stone Island Longsleeve">
 					<div id="stoneIslandLongsleeve">
 						<img
-							src="./Products/Stone Island Longsleeve/1.JPG"
+							src="/Products/Stone Island Longsleeve/1.JPG"
 							alt="Stone Island Longsleeve"
 						/>
 					</div>
@@ -204,8 +177,8 @@
 					<p class="color">Dark Gray</p>
 					<p class="price">$280 CAD</p>
 				</a>
-				<!--<a href="./Products/Wallpapers/wallapers.html">
-                <img src="./Products/" alt="Wallpapers">
+				<!--<a href="/Products/Wallpapers">
+                <img src="/Products/" alt="Wallpapers">
                 <p></p>
             </a>-->
 			</section>

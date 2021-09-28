@@ -2,10 +2,10 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<title>Socials</title>
-		<link href="./Styles/baseline.css" rel="stylesheet" />
-		<link href="./Styles/socials.css" rel="stylesheet" />
-		<script type="text/javascript" src="./Scripts/menuSlide.js"></script>
+		<title>Photos</title>
+		<link href="/Styles/baseline.css" rel="stylesheet" />
+		<link href="/Styles/photos.css" rel="stylesheet" />
+		<script type="text/javascript" src="/Scripts/menuSlide.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 	</head>
 
@@ -19,26 +19,26 @@
 			<div id="menuToggle">
 				<input onclick="slide(); hamburger()" />
 			</div>
-			<nav>
+			<nav role="navigation">
 				<ul id="navbar">
-					<a href="https://ericduffield.com/">
+					<a href="/">
 						<li>Home</li>
 					</a>
-					<a href="./about.html">
+					<a href="/about">
 						<li>About</li>
 					</a>
-					<a href="./store.html">
+					<a href="/store">
 						<li>Store</li>
 					</a>
-					<a href="./photos.html">
+					<a class="active" href="/photos">
 						<li>Photos</li>
 					</a>
-					<a class="active" href="./socials.html">
+					<a href="/socials">
 						<li>Socials</li>
 					</a>
 				</ul>
 			</nav>
-			<a href="https://ericduffield.com/">
+			<a href="/">
 				<p id="name">Eric Duffield</p>
 			</a>
 			<div id="socials">
@@ -102,7 +102,7 @@
 				</ul>
 			</div>
 			<div id="cart">
-				<a href="./cart.html">
+				<a href="/cart">
 					<svg
 						aria-hidden="true"
 						focusable="false"
@@ -119,77 +119,129 @@
 		</header>
 
 		<ul id="menu">
-			<a href="https://ericduffield.com/">
+			<a href="/">
 				<li>Home</li>
 			</a>
-			<a class="active" href="./about.html">
+			<a href="/about">
 				<li>About</li>
 			</a>
-			<a href="./store.html">
+			<a href="/store">
 				<li>Store</li>
 			</a>
-			<a href="./photos.html">
+			<a href="/photos">
 				<li>Photos</li>
 			</a>
-			<a href="./socials.html">
+			<a href="/socials">
 				<li>Socials</li>
 			</a>
 		</ul>
 
 		<main>
-			<section>
-				<div id="profileDiv">
-					<img
-						id="profile"
-						src="./Photos/Socials/Profile.jpeg"
-						alt="Profile Image"
-					/>
-				</div>
+			<h1>Room Inspo</h1>
+			<section id="room">
+				<img id="desk" src="/Photos/Photos/Desk.JPG" alt="Desk" />
+				<img src="/Photos/Photos/Pc.JPG" alt="Pc" />
+				<img src="/Photos/Photos/Bedside.JPG" alt="Bedside Table" />
+				<img id="bed" src="/Photos/Photos/Bed.JPG" alt="Bed" />
+				<img src="/Photos/Photos/Rack2.JPG" alt="Clothing Rack 2" />
+				<img src="/Photos/Photos/Rack.JPG" alt="Clothing Rack" />
+				<img src="/Photos/Photos/Shelf.JPG" alt="Shoe Shelf" />
 			</section>
-			<section id="socialsSection">
+			<h1>Gear/Stuff/Links</h1>
+			<section id="links">
 				<a
-					class="link"
-					href="https://www.snapchat.com/add/eric_duffield"
-					><img
-						class="logo"
-						src="./Photos/Socials/Snap.svg"
-						alt="Snapchat"
-					/>
-					<p>Snapchat</p>
-				</a>
-				<a class="link" href="https://www.instagram.com/eric_duffield/"
-					><img
-						class="logo"
-						src="./Photos/Socials/Instagram.svg"
-						alt="Instagram"
-					/>
-					<p>Instagram</p>
-				</a>
-				<a class="link" href="https://vsco.co/ericduffield-/gallery"
-					><img
-						class="logo"
-						src="./Photos/Socials/VSCO.svg"
-						alt="VSCO"
-					/>
-					<p>VSCO</p>
-				</a>
-				<a class="link" href="https://www.grailed.com/duffsshop"
-					><img
-						class="logo"
-						src="./Photos/Socials/Grailed.jpg"
-						alt="Grailed"
-					/>
-					<p>Grailed</p>
-				</a>
-				<a href="https://www.facebook.com/ericduffield0"
-					><img
-						class="logo"
-						src="./Photos/Socials/Facebook.svg"
-						alt="Facebook"
-					/>
-					<p>Facebook</p>
-				</a>
+					href="https://www.ikea.com/ca/en/p/malm-high-bed-frame-2-storage-boxes-white-stained-oak-veneer-luroey-s39176588/"
+					>Bed:
+					<p>Ikea Malm</p></a
+				>
+				<a
+					href="https://www.ikea.com/ca/en/p/lack-wall-shelf-unit-white-60282186/"
+					>Shoe Shelf:
+					<p>Lack</p></a
+				>
+				<a
+					href="https://www.ikea.com/ca/en/p/kallax-shelf-unit-white-00275848/"
+					>Shoe Box Shelf:
+					<p>Kallax</p></a
+				>
+				<a
+					href="https://www.ikea.com/ca/en/p/mulig-clothes-rack-white-60179434/"
+					>White Clothes Rack:
+					<p>Mulig</p></a
+				>
+				<a
+					href="https://www.ikea.com/ca/en/p/turbo-clothes-rack-indoor-outdoor-black-40177233/"
+					>Black Clothes Rack:
+					<p>Turbo</p></a
+				>
+				<a
+					href="https://www.ikea.com/ca/en/p/malm-2-drawer-chest-white-stained-oak-veneer-10178601/"
+					>Bedside Table:
+					<p>Malm</p></a
+				>
+				<a
+					href="https://www.ikea.com/us/en/campaigns/markerad-limited-collection-pubd8256f7e"
+					>Bed Sheets:
+					<p>Markerad</p></a
+				>
+				<a
+					href="https://www.ikea.com/ca/en/p/lack-wall-shelf-white-90282180/?utm_source=google&utm_medium=surfaces&utm_campaign=shopping_feed&utm_content=free_google_shopping_clicks_Storeandorganisefurniture&gclid=CjwKCAjwz_WGBhA1EiwAUAxIceTwA3uDaCpg_5Cx-Yb0dlNYymLKpv2O3oyIEHmE9JSgpafo7-mIrxoCBEsQAvD_BwE"
+					>Wall Shelf:
+					<p>Lack</p></a
+				>
+				<a
+					href="https://www.bestbuy.ca/en-ca/product/asus-24-fhd-165hz-1ms-gtg-tn-led-g-sync-gaming-monitor-vg248qg-black/13819627"
+					>Monitor:
+					<p>Asus VG248QG</p></a
+				>
+				<a
+					href="https://www.amazon.ca/Technica-AT2020-Cardiod-Condensor-XLRM-type/dp/B0006H92QK/ref=sr_1_3?dchild=1&keywords=at2020&qid=1615495346&sr=8-3#"
+					>Microphone:
+					<p>Audio-Technica AT2020</p></a
+				>
+				<a
+					href="https://www.amazon.ca/gp/product/B07QR6Z1JB/ref=ox_sc_act_title_3?smid=A3DWYIK6Y9EEQB&psc=1"
+					>Audio Interface:
+					<p>Focusrite Scarlett Solo 3rd Gen</p></a
+				>
+				<a
+					href="https://www.newegg.ca/black-logitech-g613-romer-g/p/N82E16823126403?item=N82E16823126403&nm_mc=knc-googleadwordsca&cm_mmc=knc-googleadwordsca-_-gaming%20keyboard-_-logitech-_-23126403&source=region"
+					>Keyboard:
+					<p>Logitech G613 Wireless Mechanical</p></a
+				>
+				<a
+					href="https://www.amazon.ca/Sennheiser-HD-4-30i-Black-Headphones/dp/B01K4N1PY2/ref=sr_1_1?s=electronics&ie=UTF8&qid=1512510946&sr=1-1&keywords=Sennheiser+HD+4.30i"
+					>Headphones:
+					<p>Sennheise HD 4.30G</p></a
+				>
+				<a
+					href="https://www.amazon.ca/gp/product/B071YZJ1G1/ref=ppx_od_dt_b_asin_title_s00?ie=UTF8&th=1"
+					>Productivity Mouse:
+					<p>Logitech MX Master 2S</p></a
+				>
+				<a
+					href="https://www.amazon.ca/Logitech-Prodigy-Gaming-Performance-910-004796/dp/B01KUAMCV4"
+					>Gaming Mouse:
+					<p>Logitech G403 Prodigy</p></a
+				>
+				<a
+					href="https://www.amazon.ca/Herschel-Supply-Co-Backpack-Crosshatch/dp/B078J2B1W7"
+					>Bag:
+					<p>Herschel Classic Backpack</p></a
+				>
+				<a
+					href="https://www.amazon.ca/Extended-Custom-Professional-Gaming-Mouse/dp/B086D9X8TP/ref=sr_1_4?dchild=1&keywords=120%2Bcm%2Bmouse%2Bpad&qid=1612111761&sr=8-4&th=1"
+					>Mousepad:
+					<p>Extended Gaming Mouse Pad</p></a
+				>
+				<a href=""
+					>Pc:
+					<p>Specs</p></a
+				>
 			</section>
+
+			<h1>Fits</h1>
+			<section></section>
 		</main>
 
 		<footer>
