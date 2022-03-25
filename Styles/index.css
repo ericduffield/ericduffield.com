@@ -1,0 +1,269 @@
+/* ===========  Color Variables  ========== */
+
+:root {
+	--black: #2a2a2a;
+	--buttonHover: #3f3f3f;
+	--grey: #d2d2d2;
+	--white: white;
+	--darkGrey: #919190;
+}
+
+main {
+	margin: 0rem 0rem 0rem 0rem;
+}
+
+#heroSection {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 17rem;
+	overflow: hidden;
+	background: linear-gradient(
+		rgba(230, 214, 180, 0.15),
+		rgba(230, 214, 180, 0.15)
+	);
+}
+
+#heroImage {
+	min-width: 65rem;
+	z-index: -1;
+}
+
+#heroSection h1 {
+	position: absolute;
+	color: var(--white);
+	font-size: 3rem;
+}
+
+#storeSection {
+	margin: 2rem 2rem 0rem 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#storeSection img {
+	width: 30%;
+}
+
+#whiteLine{
+	margin-top: 2rem;
+	background-color: var(--white);
+	height: 1px;
+	width: 100%;
+	margin-bottom: -1px;
+}
+
+#videoSection {
+	margin-bottom: 2rem;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(
+	rgb(255, 255, 255, 0.05),
+	rgba(255, 255, 255, 0.05))	
+}
+
+#ytplayer{
+	width: 100%;
+	z-index: -1;
+}
+
+#wallpaperSection {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#wallpaperSection img {
+	width: 50%;
+}
+
+#photosSection img {
+	width: 50%;
+}
+
+.button {
+	margin-top: 2rem;
+	background-color: var(--black);
+	color: var(--white);
+	font-weight: 400;
+	align-items: center;
+	font-size: 1rem;
+	padding: 0.6rem;
+	border: 0.1rem solid var(--black);
+	border-radius: 2px;
+	transition: 0.4s ease-in-out;
+}
+
+.button:hover {
+	background-color: var(--buttonHover);
+	border: 0.1rem solid var(--buttonHover);
+	transition: 0.4s ease-in-out;
+}
+
+#grid {
+	display: grid;
+	text-transform: uppercase;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 2rem;
+	row-gap: 2rem;
+	align-items: start;
+}
+
+#grid a {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+	width: 100%;
+	color: var(--black);
+	font-weight: 700;
+	font-size: 1.1rem;
+	text-align: left;
+	margin-top: 0.8rem;
+}
+
+.color {
+	width: 100%;
+	color: var(--darkGrey);
+	font-weight: 600;
+	text-align: left;
+	margin-top: 0.2rem;
+}
+
+.price {
+	width: 100%;
+	color: var(--black);
+	text-align: left;
+	margin-top: 0.2rem;
+}
+
+.product img{
+  opacity: 1;
+  transition: opacity 0.75s ease-in-out;
+}
+
+.product img:hover{
+  opacity: 0;
+}
+
+#obsidians img{
+	height: 100%;
+	width: 100%;
+}
+
+#kithHoodie img{
+	height: 100%;
+	width: 100%;
+}
+
+#stoneIslandJacket img{
+	height: 100%;
+	width: 100%;
+}
+
+#obsidians{
+  background: url("../Products/Obsidians/2.JPG") no-repeat;
+  background-size: contain;
+}
+
+#kithHoodie{
+  background: url("../Products/Kith Hoodie/2.JPG") no-repeat;
+  background-size: contain;
+}
+
+#stoneIslandJacket{
+  background: url("../Products/Stone Island Jacket/2.JPG") no-repeat;
+  background-size: contain;
+}
+
+#Patreon{
+	margin-top: 2.5rem;
+	margin-bottom: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#Patreon p{
+	font-size: 25px;
+	margin-bottom: 1rem;
+}
+
+#PatreonButton{
+	display: flex;
+	justify-content: center;
+	background-color: #FF424D;
+	padding: 0.9rem 1.2rem;
+	transition: 0.4s ease-in-out;
+	margin-bottom: 1rem;
+}
+
+#PatreonButton:hover{
+	background-color: #ff4f59;
+	transition: 0.4s ease-in-out;
+}
+
+#PatreonButton img{
+	width: 8.5rem;
+}
+
+#PaypalButton{
+	display: flex;
+	justify-content: center;
+	background-color: var(--black);
+	padding: 0.8rem 1.45rem;
+	transition: 0.4s ease-in-out;
+}
+
+#PaypalButton:hover{
+	background-color: var(--buttonHover);
+	transition: 0.4s ease-in-out;
+}
+
+#PaypalButton img{
+	width: 8rem;
+}
+
+
+
+@media only screen and (max-width: 760px) {
+	#heroSection {
+		/*height: 10rem;*/
+		margin: auto;
+	}
+
+	#heroSection h1 {
+		font-size: 2.5rem;
+	}
+
+	#videoSection {
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+	}
+
+	#ytplayer{
+	height: 30rem;
+	z-index: -1;
+	}
+}
+
+@media (min-width: 640px) and (max-width: 760px) {
+	#grid {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto;
+	}
+}
+
+@media (max-width: 640px) {
+	#grid {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+	}
+}

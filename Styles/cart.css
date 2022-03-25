@@ -1,0 +1,37 @@
+:root {
+    --black: #2a2a2a;
+    --buttonHover: #3f3f3f;
+    --white: white;
+    --grey: #D2D2D2;
+}
+
+main{
+    margin: 2rem 3rem 0rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#text{
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+#shopNow{
+    background-color: var(--black);
+    color: var(--white);
+    font-weight: 400; 
+    align-items: center;
+    font-size: 1rem;
+    padding: 0.6rem;
+    border: 0.1rem solid var(--black);
+    border-radius: 2px;
+    transition: 0.4s ease-in-out;
+}
+
+#shopNow:hover{
+    background-color: var(--buttonHover);
+    border: 0.1rem solid var(--buttonHover);
+    transition: 0.4s ease-in-out;
+}
