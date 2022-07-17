@@ -100,7 +100,7 @@ main{
   font-size: 1rem;
   padding: 0.6rem;
   border: 0.1rem solid var(--black);
-  border-radius: 2px;
+  border-radius: 0.25rem;
 }
 
 .button:hover {

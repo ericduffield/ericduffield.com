@@ -3,12 +3,11 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>Store</title>
+	<title>Projects</title>
 	<link rel="icon" href="/Pictures/favicon.ico" />
-	<link href="../../Styles/baseline.css" rel="stylesheet" />
-	<link href="../../Styles/product.css" rel="stylesheet" />
-	<script type="text/javascript" src="../../Scripts/product.js"></script>
-	<script type="text/javascript" src="../../Scripts/menuSlide.js"></script>
+	<link href="/Styles/baseline.css" rel="stylesheet" />
+	<link href="/Styles/socials.css" rel="stylesheet" />
+	<script type="text/javascript" src="/Scripts/menuSlide.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 </head>
 
@@ -30,10 +29,10 @@
 				<a href="/about">
 					<li>About</li>
 				</a>
-				<a class="active" href="/store">
+				<a href="/store">
 					<li>Store</li>
 				</a>
-				<a href="/projects">
+				<a class="active" href="/projects">
 					<li>Projects</li>
 				</a>
 				<a href="/socials">
@@ -106,100 +105,26 @@
 	</ul>
 
 	<main>
-		<section id="content">
-			<div id="hiddenTitle">
-				<h1>Nike Center Swoosh Hoodie - L</h1>
-			</div>
-			<div id="images">
-				<div id="mainPicture">
-					<img id="expandedImg" src="./1.JPG" />
-				</div>
-				<div id="thumbnails">
-					<div class="column">
-						<img src="./1.JPG" alt="1" onclick="myFunction(this);" />
-					</div>
-					<div class="column">
-						<img src="./2.JPG" alt="2" onclick="myFunction(this);" />
-					</div>
-					<div class="column">
-						<img src="./3.JPG" alt="3" onclick="myFunction(this);" />
-					</div>
-					<div class="column">
-						<img src="./4.JPG" alt="4" onclick="myFunction(this);" />
-					</div>
-					<div class="column last">
-						<img src="./5.JPG" alt="5" onclick="myFunction(this);" />
-					</div>
-				</div>
-			</div>
-			<div id="description">
-				<h1>Nike Center Swoosh Hoodie - L</h1>
-				<h2>$300 CAD</h2>
-				<p>Size: L</p>
-				<p>Colorway: Black</p>
-				<p>Condition: 9/10</p>
-
-				<div id="paypalButton">
-					<div id="smart-button-container">
-						<div style="text-align: center;">
-							<div id="paypal-button-container"></div>
-						</div>
-					</div>
-					<script
-						src="https://www.paypal.com/sdk/js?client-id=AYNd029yWQYpw5QpHOI7Eu5TPb4MUuCKrNsAFEF3G0eYECqRGhgmW706-j3MKRdlJvSYVOTu_kVG2DVp&enable-funding=venmo&currency=CAD"
-						data-sdk-integration-source="button-factory"></script>
-					<script>
-						function initPayPalButton() {
-							paypal.Buttons({
-								style: {
-									shape: 'rect',
-									color: 'gold',
-									layout: 'vertical',
-									label: 'paypal',
-
-								},
-
-								createOrder: function (data, actions) {
-									return actions.order.create({
-										purchase_units: [{ "description": "Nike Center Swoosh Hoodie - L\n$300 CAD\nSize: L\nColorway: Black\nCondition: 9/10", "amount": { "currency_code": "CAD", "value": 300 } }]
-									});
-								},
-
-								onApprove: function (data, actions) {
-									return actions.order.capture().then(function (orderData) {
-
-										// Full available details
-										console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
-
-										// Show a success message within this page, e.g.
-										const element = document.getElementById('paypal-button-container');
-										element.innerHTML = '';
-										element.innerHTML = '<h3>Thank you for your payment!</h3>';
-
-										// Or go to another URL:  actions.redirect('thank_you.html');
-
-									});
-								},
-
-								onError: function (err) {
-									console.log(err);
-								}
-							}).render('#paypal-button-container');
-						}
-						initPayPalButton();
-					</script>
-				</div>
+		<section>
+			<div id="profileDiv">
+				<img id="profile" src="/Pictures/Socials/Profile.jpeg" alt="Profile Image" />
 			</div>
 		</section>
-		<section id="back">
-			<a class="button" href="/store">&#x3c; BACK TO STORE</a>
+		<section id="socialsSection">
+			<a class="link" href="https://duffcoincrypto.com/"><img class="logo" src="/Pictures/Projects/duffcoin.png"
+					alt="Duff Coin" />
+				<p>Duff Coin</p>
+			</a>
+			<a class="link" href="https://betterstake.netlify.app/"><img class="logo"
+					src="/Pictures/Projects/betterstake.png" alt="Duff Coin" />
+				<p>Better Stake</p>
+			</a>
+			<a class="link" href="https://jeffbrin.github.io/CrimeAndPunishmentGame/"><img class="logo"
+					src="/Pictures/Projects/cp.png" alt="Duff Coin" />
+				<p>C&P Game</p>
+			</a>
+
 		</section>
-		<p id="question">
-			Question about an item? <br id="line" />
-			Send me a message on
-			<a href="https://www.instagram.com/eric_duffield/">instagram</a>.
-		</p>
-		<p id="refunds">All Sales Final/No Returns or Refunds</p>
 	</main>
 
 	<footer>

@@ -12,6 +12,13 @@ main {
 	margin: 0rem 0rem 0rem 0rem;
 }
 
+#projectsSection h1, #storeSection h1, #Patreon h1{
+	font-size: 2rem;
+	font-weight: 400;
+	color: var(--black);
+	margin-bottom: 2rem;
+}
+
 #heroSection {
 	display: flex;
 	justify-content: center;
@@ -35,8 +42,55 @@ main {
 	font-size: 3rem;
 }
 
+
+#projectsSection{
+	margin-top: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#projectsSection :not(:nth-last-of-type(1)){
+    padding-right: 3rem;
+    width: 100%;
+    max-width: 40rem;
+    text-decoration: none;
+    background-color: var(--white);
+    color: var(--black);
+    font-weight: 400; 
+    align-items: center;
+    display: grid;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border: 0.1rem solid var(--black);
+    border-radius: 0.5rem;
+    grid-template-columns: 3.5rem 1fr 3.5rem;
+    transition: 0.4s ease-in-out;
+}
+
+#projectsSection :not(:nth-last-of-type(1)):hover{
+    color:white;
+    background-color: var(--black);
+    transition: 0.4s ease-in-out;
+}
+
+.link{
+    margin-bottom: 1rem;
+}
+
+#projectsSection img{
+    width: 3rem;
+    border-radius: 17.544%;
+}
+
+#projectsSection a p{
+    text-align: center;
+}
+
+
 #storeSection {
-	margin: 2rem 2rem 0rem 2rem;
+	margin: 1.6rem 2rem 0rem 2rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -94,7 +148,7 @@ main {
 	font-size: 1rem;
 	padding: 0.6rem;
 	border: 0.1rem solid var(--black);
-	border-radius: 2px;
+	border-radius: 0.25rem;
 	transition: 0.4s ease-in-out;
 }
 
@@ -182,17 +236,12 @@ main {
 }
 
 #Patreon{
-	margin-top: 2.5rem;
+	margin-top: 1.6rem;
 	margin-bottom: 0.5rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-}
-
-#Patreon p{
-	font-size: 25px;
-	margin-bottom: 1rem;
 }
 
 #PatreonButton{
@@ -202,10 +251,11 @@ main {
 	padding: 0.9rem 1.2rem;
 	transition: 0.4s ease-in-out;
 	margin-bottom: 1rem;
+	border-radius: 0.25rem;
 }
 
 #PatreonButton:hover{
-	background-color: #ff4f59;
+	background-color: #ff646d;
 	transition: 0.4s ease-in-out;
 }
 
@@ -219,6 +269,7 @@ main {
 	background-color: var(--black);
 	padding: 0.8rem 1.45rem;
 	transition: 0.4s ease-in-out;
+	border-radius: 0.25rem;
 }
 
 #PaypalButton:hover{

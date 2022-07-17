@@ -38,6 +38,7 @@ main{
 }
 
 #socialsSection a{
+    padding-right: 3rem;
     width: 100%;
     max-width: 40rem;
     text-decoration: none;

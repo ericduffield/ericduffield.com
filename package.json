@@ -1,0 +1,23 @@
+{
+  "name": "ericduffield.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "/Scripts/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericduffield/ericduffield.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ericduffield/ericduffield.com/issues"
+  },
+  "homepage": "https://github.com/ericduffield/ericduffield.com#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6"
+  }
+}
