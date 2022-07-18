@@ -40,7 +40,7 @@ img{
     text-decoration: underline;
 }
 
-@media (min-width:640px) and (max-width:760px){
+@media (min-width:640px) and (max-width:765px){
     main{
         margin: 3rem 3rem;
     }

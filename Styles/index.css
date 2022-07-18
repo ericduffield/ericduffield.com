@@ -40,10 +40,12 @@ main {
 	position: absolute;
 	color: var(--white);
 	font-size: 3rem;
+	text-shadow: 0.9px 0.9px 6px var(--black);
 }
 
 
 #projectsSection{
+	margin: 0rem 3rem;
 	margin-top: 1.6rem;
     display: flex;
     flex-direction: column;
@@ -283,7 +285,7 @@ main {
 
 
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 765px) {
 	#heroSection {
 		/*height: 10rem;*/
 		margin: auto;
@@ -305,7 +307,7 @@ main {
 	}
 }
 
-@media (min-width: 640px) and (max-width: 760px) {
+@media (min-width: 640px) and (max-width: 765px) {
 	#grid {
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: auto;
