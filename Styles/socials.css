@@ -1,80 +1,78 @@
 /* ===========  Color Variables  ========== */
 
 :root {
-    --black: #2a2a2a;
-    --white: white;
+	--black: #2a2a2a;
+	--white: white;
 }
 
-main{
-    margin: 0rem 3rem;
+main {
+	margin: 0rem 3rem;
 }
 
-#profileDiv{
-    background-color: var(--black);
-    border-radius: 100%;
-    width: 8rem;
-    height: 8rem;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 0.1rem solid var(--black);
+#profileDiv {
+	background-color: var(--black);
+	border-radius: 100%;
+	width: 8rem;
+	height: 8rem;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid var(--black);
 }
 
-#profile{
-    height: 100%;
-    width: 100%;
-    border-radius: 100%;
+#profile {
+	height: 100%;
+	width: 100%;
+	border-radius: 100%;
 }
 
-#socialsSection{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#socialsSection {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-#socialsSection a{
-    padding-right: 3rem;
-    width: 100%;
-    max-width: 40rem;
-    text-decoration: none;
-    background-color: var(--white);
-    color: var(--black);
-    font-weight: 400; 
-    align-items: center;
-    display: grid;
-    padding: 0.5rem;
-    font-size: 1.2rem;
-    border: 0.1rem solid var(--black);
-    border-radius: 0.5rem;
-    grid-template-columns: 3.5rem 1fr 3.5rem;
-    transition: 0.4s ease-in-out;
+#socialsSection a {
+	padding-right: 3rem;
+	width: 100%;
+	max-width: 40rem;
+	text-decoration: none;
+	background-color: var(--white);
+	color: var(--black);
+	font-weight: 400;
+	align-items: center;
+	display: grid;
+	padding: 0.5rem;
+	font-size: 1.2rem;
+	border: 1px solid var(--black);
+	border-radius: 0.5rem;
+	grid-template-columns: 3.5rem 1fr 3.5rem;
+	transition: 0.4s ease-in-out;
 }
 
-#socialsSection a:hover{
-    color:white;
-    background-color: var(--black);
-    transition: 0.4s ease-in-out;
+#socialsSection a:hover {
+	color: white;
+	background-color: var(--black);
+	transition: 0.4s ease-in-out;
 }
 
-.link{
-    margin-bottom: 1rem;
+.link {
+	margin-bottom: 1rem;
 }
 
-#socialsSection img{
-    width: 3rem;
-    border-radius: 17.544%;
+#socialsSection img {
+	width: 3rem;
+	border-radius: 17.544%;
 }
 
-#socialsSection a p{
-    text-align: center;
+#socialsSection a p {
+	text-align: center;
 }
 
-@media only screen and (max-width: 765px)
-{
-
+@media only screen and (max-width: 765px) {
 }

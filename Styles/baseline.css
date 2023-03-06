@@ -12,6 +12,8 @@
 	--hover: #444444;
 	--white: white;
 	--grey: #d2d2d2;
+
+	font-size: 125%;
 }
 
 /* Header */
@@ -44,7 +46,6 @@ header {
 	-moz-transition: 0.5s ease-in-out;
 	-o-transition: 0.5s ease-in-out;
 	transition: 0.5s ease-in-out;
-	cursor: pointer;
 }
 
 #hamburger span {
@@ -275,7 +276,7 @@ footer svg {
 
 /* Media Query */
 
-@media only screen and (max-width: 765px) {
+@media only screen and (max-width: 1000px) {
 	header {
 		padding-left: 3rem;
 		padding-right: 3rem;
@@ -309,10 +310,10 @@ footer svg {
 	#menuToggle input {
 		display: block;
 		position: absolute;
-		width: 32px;
-		height: 28px;
-		top: 29px;
-		left: 44px;
+		width: 40px;
+		height: 35px;
+		top: 37px;
+		left: 56px;
 		cursor: pointer;
 		opacity: 0; /* hide this */
 		z-index: 2; /* and place it over the hamburger */

@@ -1,204 +1,198 @@
-main{
-  margin: 2rem 2rem 0rem 2rem;
+main {
+	margin: 2rem 2rem 0rem 2rem;
 }
 
 :root {
-  --black: #2a2a2a;
+	--black: #2a2a2a;
 	--buttonHover: #3f3f3f;
-  --white: white;
-  --grey: #D2D2D2;
-  --darkGrey: #919190;
+	--white: white;
+	--grey: #d2d2d2;
+	--darkGrey: #919190;
 }
 
 #grid {
-  display: grid;
-  text-transform: uppercase;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 2rem;
-  row-gap: 2rem;
-  align-items: start;
+	display: grid;
+	text-transform: uppercase;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 2rem;
+	row-gap: 2rem;
+	align-items: start;
 }
 
 #grid a {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
-.name{
-  width: 100%;
-  color: var(--black);
-  font-weight: 700;
-  font-size: 1.1rem;
-  text-align: left;
-  margin-top: 0.8rem;
+.name {
+	width: 100%;
+	color: var(--black);
+	font-weight: 700;
+	font-size: 1.1rem;
+	text-align: left;
+	margin-top: 0.8rem;
 }
 
-.color{
-  width: 100%;
-  color: var(--darkGrey);
-  font-weight: 600;
-  text-align: left;
-  margin-top: 0.2rem;
+.color {
+	width: 100%;
+	color: var(--darkGrey);
+	font-weight: 600;
+	text-align: left;
+	margin-top: 0.2rem;
 }
 
-.price{
-  width: 100%;
-  color: var(--black);
-  text-align: left;
-  margin-top: 0.2rem;
+.price {
+	width: 100%;
+	color: var(--black);
+	text-align: left;
+	margin-top: 0.2rem;
 }
 
 a div img {
-  width: 100%;
-  opacity: 0;
+	width: 100%;
+	opacity: 0;
 }
 
-
-.product img{
-  height: 100%;
-  width: 100%;
-  opacity: 1;
-  transition: opacity 0.75s ease-in-out;
-  background-size: contain;
+.product img {
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+	transition: opacity 0.75s ease-in-out;
+	background-size: contain;
 }
 
-.product img:hover{
-  opacity: 0;
+.product img:hover {
+	opacity: 0;
 }
 
-
-#obsidians{
-  background: url("../Products/Obsidians/2.JPG") no-repeat;
-  background-size: contain;
-
+#obsidians {
+	background: url('../Products/Obsidians/2.JPG') no-repeat;
+	background-size: contain;
 }
 
-#kithHoodie{
-  background: url("../Products/Kith Hoodie/2.JPG") no-repeat;
-  background-size: contain;
+#kithHoodie {
+	background: url('../Products/Kith Hoodie/2.JPG') no-repeat;
+	background-size: contain;
 }
 
-#stoneIslandJacket{
-  background: url("../Products/Stone Island Jacket/2.JPG") no-repeat;
-  background-size: contain;
+#stoneIslandJacket {
+	background: url('../Products/Stone Island Jacket/2.JPG') no-repeat;
+	background-size: contain;
 }
 
-#shadows{
-  background: url("../Products/Shadows/2.JPG") no-repeat;
-  background-size: contain;
+#shadows {
+	background: url('../Products/Shadows/2.JPG') no-repeat;
+	background-size: contain;
 }
 
-#essentialsHoodie{
-  background: url("../Products/Essentials Hoodie/2.JPG") no-repeat;
-  background-size: contain;
+#essentialsHoodie {
+	background: url('../Products/Essentials Hoodie/2.JPG') no-repeat;
+	background-size: contain;
 }
 
-#nikeHoodie{
-  background: url("../Products/Nike Hoodie/2.JPG") no-repeat;
-  background-size: contain;
+#nikeHoodie {
+	background: url('../Products/Nike Hoodie/2.JPG') no-repeat;
+	background-size: contain;
 }
 
-#stoneIslandLongsleeve{
-  background: url("../Products/Stone Island Longsleeve/2.JPG") no-repeat;
-  background-size: contain;
+#stoneIslandLongsleeve {
+	background: url('../Products/Stone Island Longsleeve/2.JPG') no-repeat;
+	background-size: contain;
 }
 
-#stoneIslandCrewneck{
-  background: url("../Products/Stone Island Crewneck/2.JPG") no-repeat;
-  background-size: contain;
+#stoneIslandCrewneck {
+	background: url('../Products/Stone Island Crewneck/2.JPG') no-repeat;
+	background-size: contain;
 }
 
-#coleBuxtonCrewneck{
-  background: url("../Products/Cole Buxton Crewneck/2.JPG") no-repeat;
-  background-size: contain;
+#coleBuxtonCrewneck {
+	background: url('../Products/Cole Buxton Crewneck/2.JPG') no-repeat;
+	background-size: contain;
 }
 
-#alyxLongsleeve{
-  background: url("../Products/Alyx Longsleeve/2.JPG") no-repeat;
-  background-size: contain;
+#alyxLongsleeve {
+	background: url('../Products/Alyx Longsleeve/2.JPG') no-repeat;
+	background-size: contain;
 }
 
-#essentialsPants{
-  background: url("../Products/Essentials Pants/4.JPG") no-repeat;
-  background-size: contain;
+#essentialsPants {
+	background: url('../Products/Essentials Pants/4.JPG') no-repeat;
+	background-size: contain;
 }
 
-
-
-#button{
-  display: flex;
-  justify-content: center;
+#button {
+	display: flex;
+	justify-content: center;
 }
 
 .button {
-  margin-top: 2rem;
-  background-color: var(--black);
-  color: var(--white);
-  font-weight: 400; 
-  align-items: center;
-  font-size: 1rem;
-  padding: 0.6rem;
-  border: 0.1rem solid var(--black);
-  border-radius: 0.25rem;
-  transition: 0.4s ease-in-out;
+	margin-top: 2rem;
+	background-color: var(--black);
+	color: var(--white);
+	font-weight: 400;
+	align-items: center;
+	font-size: 1rem;
+	padding: 0.6rem;
+	border: 1px solid var(--black);
+	border-radius: 0.25rem;
+	transition: 0.4s ease-in-out;
 }
 
 .button:hover {
-  background-color: var(--buttonHover);
-  border: 0.1rem solid var(--buttonHover);
-  transition: 0.4s ease-in-out;
+	background-color: var(--buttonHover);
+	border: 0.1rem solid var(--buttonHover);
+	transition: 0.4s ease-in-out;
 }
 
-#question{
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 0.5rem;
-  font-size: 0.75em;
-  color: var(--black);
-  letter-spacing: 1px;
+#question {
+	text-align: center;
+	margin-top: 2rem;
+	margin-bottom: 0.5rem;
+	font-size: 0.75em;
+	color: var(--black);
+	letter-spacing: 1px;
 }
 
-#question a{
-  font-weight: 600;
-  color: black;
-  text-decoration: underline;
+#question a {
+	font-weight: 600;
+	color: black;
+	text-decoration: underline;
 }
 
-#line{
-  display: none;
+#line {
+	display: none;
 }
 
 #refunds {
-  font-size: 0.75em;
-  color: var(--black);
-  letter-spacing: 1px;
+	font-size: 0.75em;
+	color: var(--black);
+	letter-spacing: 1px;
 }
 
+@media (min-width: 765px) and (max-width: 1000px) {
+	main {
+		margin: 3rem 3rem 0rem 3rem;
+	}
 
-@media (min-width:640px) and (max-width:765px){
-  main{
-    margin: 3rem 3rem 0rem 3rem;
-  }
-
-  #grid{
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    column-gap: 3rem;
-  }
+	#grid {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto;
+		column-gap: 3rem;
+	}
 }
 
-@media (max-width:640px){
-  main{
-    margin: 3rem 3rem 0rem 3rem;
-  }
+@media (max-width: 765px) {
+	main {
+		margin: 3rem 3rem 0rem 3rem;
+	}
 
-  #grid{
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    column-gap: 3rem;
-  }
+	#grid {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+		column-gap: 3rem;
+	}
 
-  #line{
-    display: block;
-  }
+	#line {
+		display: block;
+	}
 }

@@ -12,7 +12,9 @@ main {
 	margin: 0rem 0rem 0rem 0rem;
 }
 
-#projectsSection h1, #storeSection h1, #Patreon h1{
+#projectsSection h1,
+#storeSection h1,
+#Patreon h1 {
 	font-size: 2rem;
 	font-weight: 400;
 	color: var(--black);
@@ -23,7 +25,7 @@ main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 17rem;
+	height: 20rem;
 	overflow: hidden;
 	background: linear-gradient(
 		rgba(230, 214, 180, 0.15),
@@ -43,53 +45,51 @@ main {
 	text-shadow: 0.9px 0.9px 6px var(--black);
 }
 
-
-#projectsSection{
+#projectsSection {
 	margin: 0rem 3rem;
 	margin-top: 1.6rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-#projectsSection :not(:nth-last-of-type(1)){
-    padding-right: 3rem;
-    width: 100%;
-    max-width: 40rem;
-    text-decoration: none;
-    background-color: var(--white);
-    color: var(--black);
-    font-weight: 400; 
-    align-items: center;
-    display: grid;
-    padding: 0.5rem;
-    font-size: 1.2rem;
-    border: 0.1rem solid var(--black);
-    border-radius: 0.5rem;
-    grid-template-columns: 3.5rem 1fr 3.5rem;
-    transition: 0.4s ease-in-out;
+#projectsSection :not(:nth-last-of-type(1)) {
+	padding-right: 3rem;
+	width: 100%;
+	max-width: 40rem;
+	text-decoration: none;
+	background-color: var(--white);
+	color: var(--black);
+	font-weight: 400;
+	align-items: center;
+	display: grid;
+	padding: 0.5rem;
+	font-size: 1.2rem;
+	border: 1px solid var(--black);
+	border-radius: 0.5rem;
+	grid-template-columns: 3.5rem 1fr 3.5rem;
+	transition: 0.4s ease-in-out;
 }
 
-#projectsSection :not(:nth-last-of-type(1)):hover{
-    color:white;
-    background-color: var(--black);
-    transition: 0.4s ease-in-out;
+#projectsSection :not(:nth-last-of-type(1)):hover {
+	color: white;
+	background-color: var(--black);
+	transition: 0.4s ease-in-out;
 }
 
-.link{
-    margin-bottom: 1rem;
+.link {
+	margin-bottom: 1rem;
 }
 
-#projectsSection img{
-    width: 3rem;
-    border-radius: 17.544%;
+#projectsSection img {
+	width: 3rem;
+	border-radius: 17.544%;
 }
 
-#projectsSection a p{
-    text-align: center;
+#projectsSection a p {
+	text-align: center;
 }
-
 
 #storeSection {
 	margin: 1.6rem 2rem 0rem 2rem;
@@ -103,7 +103,7 @@ main {
 	width: 30%;
 }
 
-#whiteLine{
+#whiteLine {
 	margin-top: 2rem;
 	background-color: var(--white);
 	height: 1px;
@@ -118,11 +118,12 @@ main {
 	justify-content: center;
 	align-items: center;
 	background: linear-gradient(
-	rgb(255, 255, 255, 0.05),
-	rgba(255, 255, 255, 0.05))	
+		rgb(255, 255, 255, 0.05),
+		rgba(255, 255, 255, 0.05)
+	);
 }
 
-#ytplayer{
+#ytplayer {
 	width: 100%;
 	z-index: -1;
 }
@@ -149,7 +150,7 @@ main {
 	align-items: center;
 	font-size: 1rem;
 	padding: 0.6rem;
-	border: 0.1rem solid var(--black);
+	border: 1px solid var(--black);
 	border-radius: 0.25rem;
 	transition: 0.4s ease-in-out;
 }
@@ -170,8 +171,8 @@ main {
 }
 
 #grid a {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .name {
@@ -198,46 +199,46 @@ main {
 	margin-top: 0.2rem;
 }
 
-.product img{
-  opacity: 1;
-  transition: opacity 0.75s ease-in-out;
+.product img {
+	opacity: 1;
+	transition: opacity 0.75s ease-in-out;
 }
 
-.product img:hover{
-  opacity: 0;
+.product img:hover {
+	opacity: 0;
 }
 
-#obsidians img{
+#obsidians img {
 	height: 100%;
 	width: 100%;
 }
 
-#kithHoodie img{
+#kithHoodie img {
 	height: 100%;
 	width: 100%;
 }
 
-#stoneIslandJacket img{
+#stoneIslandJacket img {
 	height: 100%;
 	width: 100%;
 }
 
-#obsidians{
-  background: url("../Products/Obsidians/2.JPG") no-repeat;
-  background-size: contain;
+#obsidians {
+	background: url('../Products/Obsidians/2.JPG') no-repeat;
+	background-size: contain;
 }
 
-#kithHoodie{
-  background: url("../Products/Kith Hoodie/2.JPG") no-repeat;
-  background-size: contain;
+#kithHoodie {
+	background: url('../Products/Kith Hoodie/2.JPG') no-repeat;
+	background-size: contain;
 }
 
-#stoneIslandJacket{
-  background: url("../Products/Stone Island Jacket/2.JPG") no-repeat;
-  background-size: contain;
+#stoneIslandJacket {
+	background: url('../Products/Stone Island Jacket/2.JPG') no-repeat;
+	background-size: contain;
 }
 
-#Patreon{
+#Patreon {
 	margin-top: 1.6rem;
 	margin-bottom: 0.5rem;
 	display: flex;
@@ -246,26 +247,26 @@ main {
 	align-items: center;
 }
 
-#PatreonButton{
+#PatreonButton {
 	display: flex;
 	justify-content: center;
-	background-color: #FF424D;
+	background-color: #ff424d;
 	padding: 0.9rem 1.2rem;
 	transition: 0.4s ease-in-out;
 	margin-bottom: 1rem;
 	border-radius: 0.25rem;
 }
 
-#PatreonButton:hover{
+#PatreonButton:hover {
 	background-color: #ff646d;
 	transition: 0.4s ease-in-out;
 }
 
-#PatreonButton img{
+#PatreonButton img {
 	width: 8.5rem;
 }
 
-#PaypalButton{
+#PaypalButton {
 	display: flex;
 	justify-content: center;
 	background-color: var(--black);
@@ -274,16 +275,14 @@ main {
 	border-radius: 0.25rem;
 }
 
-#PaypalButton:hover{
+#PaypalButton:hover {
 	background-color: var(--buttonHover);
 	transition: 0.4s ease-in-out;
 }
 
-#PaypalButton img{
+#PaypalButton img {
 	width: 8rem;
 }
-
-
 
 @media only screen and (max-width: 765px) {
 	#heroSection {
@@ -301,9 +300,9 @@ main {
 		justify-content: center;
 	}
 
-	#ytplayer{
-	height: 30rem;
-	z-index: -1;
+	#ytplayer {
+		height: 30rem;
+		z-index: -1;
 	}
 }
 
